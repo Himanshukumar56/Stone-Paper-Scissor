@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stone Paper Scissors</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stone Paper Scissors</h1>
+    <button
+      onclick="
+        randomNumber = Math.random() * 3;
+        computerChoice;
+        if(randomNumber >0 && randomNumber<=1){
+            computerChoice = 'Stone';
+        }
+        else if(randomNumber>1 && randomNumber<=2){
+            computerChoice = 'Paper';
+        }
+        else{
+            computerChoice = 'Scissors';
+        }
+        if(computerChoice === 'Scissors'){
+            alert(`User Won as System selected ${computerChoice}`);
+        }
+        else if(computerChoice === 'Paper'){
+            alert(`User Lost as System selected ${computerChoice}`);
+        }
+        else{
+            alert(`Tie!! as System selected ${computerChoice}`);
+        }
+    
+    "
+    >
+      Stone
+    </button>
+    <button
+      onclick="
+    randomNumber = Math.random() * 3;
+        computerChoice;
+        if(randomNumber >0 && randomNumber<=1){
+            computerChoice = 'Stone';
+        }
+        else if(randomNumber>1 && randomNumber<=2){
+            computerChoice = 'Paper';
+        }
+        else{
+            computerChoice = 'Scissors';
+        }
+        if(computerChoice === 'Scissors'){
+            alert(`User Lost as System selected ${computerChoice}`);
+        }
+        else if(computerChoice === 'Stone'){
+            alert(`User Won as System selected ${computerChoice}`);
+        }
+        else{
+            alert(`Tie!! as System selected ${computerChoice}`);
+        }
+
+    "
+    >
+      Paper
+    </button>
+    <button
+      onclick="
+        randomNumber = Math.random() * 3;
+        computerChoice;
+        if(randomNumber >0 && randomNumber<=1){
+            computerChoice = 'Stone';
+        }
+        else if(randomNumber>1 && randomNumber<=2){
+            computerChoice = 'Paper';
+        }
+        else{
+            computerChoice = 'Scissors';
+        }
+        if(computerChoice === 'Stone'){
+            alert(`User Lost as System selected ${computerChoice}`);
+        }
+        else if(computerChoice === 'Paper'){
+            alert(`User Won as System selected ${computerChoice}`);
+        }
+        else{
+            alert(`Tie!! as System selected ${computerChoice}`);
+        }
+    "
+    >
+      Scissors
+    </button>
+    <script>
+      let randomNumber;
+      let computerChoice;
+    </script>
+  </body>
+</html>
