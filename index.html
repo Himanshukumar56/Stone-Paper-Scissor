@@ -12,17 +12,7 @@
     <h1>Stone Paper Scissors</h1>
     <button
       onclick="
-        randomNumber = Math.random() * 3;
-        computerChoice;
-        if(randomNumber >0 && randomNumber<=1){
-            computerChoice = 'Stone';
-        }
-        else if(randomNumber>1 && randomNumber<=2){
-            computerChoice = 'Paper';
-        }
-        else{
-            computerChoice = 'Scissors';
-        }
+      generateComputer();
         if(computerChoice === 'Scissors'){
             alert(`User Won as System selected ${computerChoice}`);
         }
@@ -39,17 +29,7 @@
     </button>
     <button
       onclick="
-    randomNumber = Math.random() * 3;
-        computerChoice;
-        if(randomNumber >0 && randomNumber<=1){
-            computerChoice = 'Stone';
-        }
-        else if(randomNumber>1 && randomNumber<=2){
-            computerChoice = 'Paper';
-        }
-        else{
-            computerChoice = 'Scissors';
-        }
+      generateComputer();
         if(computerChoice === 'Scissors'){
             alert(`User Lost as System selected ${computerChoice}`);
         }
@@ -66,17 +46,7 @@
     </button>
     <button
       onclick="
-        randomNumber = Math.random() * 3;
-        computerChoice;
-        if(randomNumber >0 && randomNumber<=1){
-            computerChoice = 'Stone';
-        }
-        else if(randomNumber>1 && randomNumber<=2){
-            computerChoice = 'Paper';
-        }
-        else{
-            computerChoice = 'Scissors';
-        }
+      generateComputer();
         if(computerChoice === 'Stone'){
             alert(`User Lost as System selected ${computerChoice}`);
         }
@@ -91,8 +61,17 @@
       Scissors
     </button>
     <script>
-      let randomNumber;
       let computerChoice;
+      function generateComputer() {
+        let randomNumber = Math.random() * 3;
+        if (randomNumber > 0 && randomNumber <= 1) {
+          computerChoice = "Stone";
+        } else if (randomNumber > 1 && randomNumber <= 2) {
+          computerChoice = "Paper";
+        } else {
+          computerChoice = "Scissors";
+        }
+      }
     </script>
   </body>
 </html>
